@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management System</title>
+    <link rel="stylesheet" href="attendance.css">
+    <link rel="icon" type="image/png" href="./src/images/icons8-student-48.png">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="./src/images/icons8-student-48.png" alt="School Logo">
+            <h1>Student Management System</h1>
+        </div>
+        <nav>
+            <ul>
+              <li><a href="students.html">Students</a></li>
+              <li class="active"><a href="attendance.html">Attendance</a></li>
+              <li><a href="Homepage.html">Marksheet</a></li>
+                <li><a href="Index.html">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+<body>
+  <div class="container">
+    <h2>Attendance Management</h2>
+    <a href="students.html" class="back-link">← Back to Students</a>
+    
+    <div class="attendance-summary">
+      <h2>Today's Attendance Summary</h2>
+      <div class="summary-cards">
+        <div class="card present">
+          <h3>Present</h3>
+          <p id="presentCount">0</p>
+        </div>
+        <div class="card absent">
+          <h3>Absent</h3>
+          <p id="absentCount">0</p>
+        </div>
+        <div class="card not-marked">
+          <h3>Not Marked</h3>
+          <p id="notMarkedCount">0</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="attendance-list">
+      <h2>Mark Attendance : </h2>
+      <table id="attendanceTable">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Register_No</th>
+            <th>Status</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </div>
+
+  <script src="attendence.js"></script>
+</body>
+</html>

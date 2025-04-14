@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "@types/express": "^5.0.1",
+    "pg": "^8.14.1"
+  },
+  "devDependencies": {
+    "@types/pg": "^8.11.11"
+  }
+}

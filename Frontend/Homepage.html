@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Student Management System - Marksheet</title>
+  <link rel="stylesheet" href="marksheet.css"/>
+  <link rel="icon" type="image/png" href="./src/images/icons8-student-48.png" />
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="./src/images/icons8-student-48.png" alt="School Logo" />
+      <h1>Student Management System</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="students.html">Students</a></li>
+        <li><a href="attendance.html">Attendance</a></li>
+        <li class="active"><a href="#">Marksheet</a></li>
+        <li><a href="Index.html">Logout</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Welcome to Our Student Portal</h1>
+      <h2>Update Student Marksheet</h2>
+
+      <label for="studentSelect">Select Student:</label>
+      <select class="dropdown" id="studentSelect">
+        <option value="">-- Choose a student --</option>
+      </select>
+
+      <form id="marksForm" style="display: none;">
+        <h2 class="title" id="formTitle"></h2>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Subject</th>
+              <th>Mark (out of 100)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Tamil</td><td><input type="number" name="tamil" id="tamil" required min="0" max="100"/></td></tr>
+            <tr><td>English</td><td><input type="number" name="english" id="english" required min="0" max="100"/></td></tr>
+            <tr><td>Maths</td><td><input type="number" name="maths" id="maths" required min="0" max="100"/></td></tr>
+            <tr><td>Science</td><td><input type="number" name="science" id="science" required min="0" max="100"/></td></tr>
+            <tr><td>Social</td><td><input type="number" name="social" id="social" required min="0" max="100"/></td></tr>
+          </tbody>
+        </table>
+
+        <button type="submit">Save Marksheet</button>
+      </form>
+
+      <section id="marksDisplay">
+        <h2>All Students' Marks</h2>
+        <table border="1">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Tamil</th>
+              <th>English</th>
+              <th>Maths</th>
+              <th>Science</th>
+              <th>Social</th>
+            </tr>
+          </thead>
+          <tbody id="marksTableBody"></tbody>
+        </table>
+      </section>
+    </section>
+  </main>
+
+  <script src="marksheet.js"></script>
+</body>
+</html>
+ 
