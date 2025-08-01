@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const data = await res.json();
       if (res.ok) {
 
-        window.location.href = 'students.html';
+        window.location.href = '../students.html';
       } else {
         alert(data.message);
       }
