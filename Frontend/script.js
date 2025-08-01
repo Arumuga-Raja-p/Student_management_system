@@ -1,6 +1,6 @@
-const container = document.querySelector('./container')
-const registerBtn = document.querySelector('./register-btn')
-const loginBtn = document.querySelector('./login-btn')
+const container = document.querySelector('.container')
+const registerBtn = document.querySelector('.register-btn')
+const loginBtn = document.querySelector('.login-btn')
 
 registerBtn.addEventListener('click',() => {
     container.classList.add('active');
@@ -14,7 +14,7 @@ loginBtn.addEventListener('click',() => {
 
 //*************************************************************************************************************************** */
 
-const API_URL = 'http://localhost:5000';
+const API_URL = 'https://sm-frontend-6gly.vercel.app/';
 
 document.addEventListener('DOMContentLoaded', () => {
 
