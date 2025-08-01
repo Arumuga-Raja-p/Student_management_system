@@ -24,7 +24,7 @@ attendanceRouter.get('/today', async (req, res) => {
 attendanceRouter.post('/', async (req:any, res:any) => {
     const { student_id, status } = req.body;
   
-    // 🛑 Validation check
+    
     if (!student_id || !status) {
       return res.status(400).json({ message: "Student ID and status are required" });
     }
