@@ -4,95 +4,120 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Student Management System</title>
+
+    <!-- Boxicons CDN -->
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
+
+    <!-- Favicon -->
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
       href="src/images/icons8-student-48.png"
     />
-    <link rel="stylesheet" href="./style.css" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
     <div>
-      <div class="title"><h1>STUDENT MANAGEMENT SYSTEM</h1></div>
+      <div class="title">
+        <h1>STUDENT MANAGEMENT SYSTEM</h1>
+      </div>
+
       <div class="container">
+        <!-- Login Form -->
         <div class="form-box login">
           <form id="login-form">
             <h1>Login</h1>
             <div class="input-box">
               <input
                 type="text"
-                name=""
                 id="login-email"
                 placeholder="Email"
                 required
               />
               <i class="bx bxs-user"></i>
             </div>
+
             <div class="input-box">
               <input
                 type="password"
-                name=""
                 id="login-password"
                 placeholder="Password"
                 required
               />
               <i class="bx bxs-lock-alt"></i>
             </div>
+
             <div class="forgot-link">
               <a href="#">Forgot Password?</a>
             </div>
-            <button type="submit" href="./Homepage.html" class="btn">Login</button>
+
+            <button type="submit" class="btn">Login</button>
           </form>
         </div>
+
+        <!-- Register Form -->
         <div class="form-box register">
-          <form action="" id="reg-form">
+          <form id="reg-form">
             <h1>Registration</h1>
+
             <div class="input-box">
               <input
                 type="text"
-                name=""
                 id="reg-name"
                 placeholder="Username"
                 required
               />
               <i class="bx bxs-user"></i>
             </div>
+
             <div class="input-box">
-              <input type="email" name="" id="reg-email" placeholder="Email" required />
+              <input
+                type="email"
+                id="reg-email"
+                placeholder="Email"
+                required
+              />
               <i class="bx bxl-gmail"></i>
             </div>
+
             <div class="input-box">
               <input
                 type="password"
-                name=""
                 id="reg-password"
-                placeholder="password "
+                placeholder="Password"
                 required
               />
               <i class="bx bxs-lock-alt"></i>
             </div>
+
             <button type="submit" class="btn">Register</button>
           </form>
         </div>
+
+        <!-- Toggle Panel -->
         <div class="toggle-box">
           <div class="toggle-panel toggle-left">
             <h1>Hello Welcome!</h1>
             <p>Don't have an account?</p>
-            <button class="btn register-btn">Register</button>
+            <button type="button" class="btn register-btn">Register</button>
           </div>
           <div class="toggle-panel toggle-right">
             <h1>Welcome Back!</h1>
             <p>Already have an account?</p>
-            <button class="btn login-btn">Login</button>
+            <button type="button" class="btn login-btn">Login</button>
           </div>
         </div>
       </div>
     </div>
-    <script src="./script.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
   </body>
 </html>
