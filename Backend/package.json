@@ -1,15 +1,15 @@
 {
   "name": "backend",
   "version": "1.0.0",
-  "main": "index.js",
+  "description": "Backend for student management system",
+  "main": "dist/server.js",
   "scripts": {
-    "start": "node dist/server.js",
+    "dev": "nodemon src/server.ts",
     "build": "tsc",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node dist/server.js"
   },
   "author": "",
   "license": "ISC",
-  "description": "",
   "dependencies": {
     "@types/cors": "^2.8.17",
     "bcrypt": "^5.1.1",
@@ -24,7 +24,6 @@
     "@types/node": "^22.14.1",
     "nodemon": "^3.1.9",
     "ts-node": "^10.9.2",
-    "tsx": "^4.19.3",
     "typescript": "^5.8.3"
   }
 }
